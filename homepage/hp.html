@@ -1,5 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="todoApp">
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+            <script src="hp.js"></script>
+    </head>
     <body>
-        Ciao!
+        <div ng-init="temp=3;surname='pippo'">
+            <label>Temp (default=3):
+                <input type="number" name="input" ng-model="temp" min="0" max="99">
+                <p> Result : {{ temp/2 }}</p>
+            </label>
+            
+            <label>Name: </label>
+            <input type="text" ng-model="name" placeholder="enter your name">
+            <h2>Hello {{name}} defined with ng-model. Surname with ng-bind: <span ng-bind="surname"></span></h2>
+        </div>
+        
+        
+        <div ng-init="students=['David','Steve','Andrew']">
+            <ol>
+                <li ng-repeat="name2 in students">{{name2}}</li>
+            </ol>
+        </div>
+        <br>
+        <br>
+        TodoList:
+        <div ng-controller="todoList">
+            <span>Items: {{todos.length}}</span>
+            <ul>
+                <li ng-repeat="todo in todos">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="todo.done">
+                        <span class="done-{{todo.done}}">{{todo.text}}</span>
+                    </label>
+                </li>
+            </ul>
+            <form ng-submit="addTodo()">
+                <input type="text" ng-model="todoText" size="30" placeholder="add new todo here">
+                <input type="submit" value="add">
+            </form>
+        </div>
     </body>
 </html>
