@@ -1,0 +1,71 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>html-bases</title>
+</head>
+<body>
+    <h1 align="center">This is headline 1. From 1 to 6 available</h1>
+    <div>p tag examples with different formats
+        <p>paragraph with </br>linebreak</p>
+        <p><b>bold text</b></p>
+        <p><i>italic text</i></p>
+        <p><sup>superscripted text</sup></p>
+        <p><sub>subscripted text</sub></p>
+        <p><ins>inserted text</ins></p>
+        <p><del>deleted text</del></p>
+    </div>
+    <hr/>
+    <img src="/media/img/anonymous.png" alt="anonymous"/>
+    <hr/>
+    <p><a href="/homepage/hp.html" target="_blank">link</a> can be opened in _blank or self</p>
+    <hr/>
+    <p>ordered list:</p>
+    <ol>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ol>
+    <p>unordered list:</p>
+    <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ul>
+    <hr/>
+    <p>table:</p>
+    <table border="2">
+        <tr>
+            <td>Red</td>
+            <td>Blue</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td><br/></td>
+            <td colspan="2">Orange</td>
+        </tr>
+    </table>
+    <hr/>
+    <div style="background-color: crimson; color:white; padding: 20px">
+        div can be used to style blocks of content. <span style="color: blue">Span used to style specific content</span>
+    </div>
+    </hr>
+    <p>Form:</p>
+    <form action="https://www.google.it" method="POST">
+        <input type="text" name="username" placeholder="enter username"/>
+        <input type="password" name="password" placeholder="enter pw"/>
+        <span>radio - same name attribute to create set</span><br/>
+        <input type="radio" name="gender"/>Male<br/>
+        <input type="radio" name="gender"/>Female<br/>
+        <span>checkbox - same name attribute to create set</span><br/>
+        <input type="checkbox" name="gender" value="1"/>Male<br/>
+        <input type="checkbox" name="gender" value="2"/>Female<br/>
+        <span>email</span>
+        <input type="email" name="email"/><br/>
+        <span>text area</span><br/>
+        <textarea name="message" id="" cols="30" rows="10"></textarea><br/>
+        <span>the submit button submits a form to its action attribute</span><br/>
+        <input type="submit" value="invia"/>
+    </form>
+    </hr>
+    <p>iFrame:</p>
+    <iframe height="150" width="300" src="https://www.youtube.com/watch?v=wNH3UVpYSSs" allowfullscreen frameborder="1"></iframe>
+</body>
