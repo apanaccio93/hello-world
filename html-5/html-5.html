@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <header>
+            <h1>Heading</h1>
+        </header>
+        <nav>
+            <p>Nav menu</p>
+            <ul>
+                <li><a href="/homepage/hp.html">Home</a></li>
+                <li><a href="/form/form.html">Form</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>article tag title</h1>
+            <p>This tag element replace the DIV element widely used in html4, along with id or classes</p>
+            <section>
+                <p>the section element is used to divide up content within an article</p>
+            </section>
+            <aside>
+                <p>aside element is secondary content. es sidebars</p>
+            </aside>
+        </article>
+        <article>
+            <h2>audio tag follows:</h2>
+            <audio scr="pippo.mp3" controls autoplay>
+                text for not supported browsers
+            </audio>
+            <audio controls loop>
+                <source src="pippo.mp3" type="audio/mpeg"> 
+            </audio>
+        </article>
+        <article>
+            <h2>video tag follows:</h2>
+            <video controls autoplay loop>
+                <source src="pippo.mp4" type="video/mp4">
+                <source src="pippo.ogg" type="video/ogg"> 
+                    text for not supported browsers
+            </video>
+        </article>
+        <article>
+            <h2>Progress element</h2>
+            Status: <progress min="0" max="100" value="33"></progress>
+        </article>
+        <article>
+            <h1>session vs local storage</h1>
+            <p>
+                session storage is destroyed once the user closes the browsers
+                local storage stores data with no expiration date
+            </p>
+            <section>
+                syntax:
+                - storing a value:
+                localStorage.setItem("key1","value1");
+
+                - getting a value
+                alert(localStorage.getItem("key1"));
+
+                - removing a value
+                localStorage.removeItem("key1");
+
+                - removing all values
+                localStorage.clear();
+            </section>
+        </article>
+        <article>
+            <h2>html geolocalization</h2>
+            <p>navigator.geolocalization.getCurrentPosition();</p>
+        </article>
+        <article>
+            <h2>Making Elements Draggable</h2>
+            <p draggable="true">any eleemnt can be Draggable</p>
+        </article>
+
+        <footer>footer</footer>
+    </body>
+</html>
