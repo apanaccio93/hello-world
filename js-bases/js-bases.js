@@ -1,12 +1,12 @@
 var user=prompt("enter your name:");
-alert(user);
+//alert(user);
 
-var testConfirmBox = confirm("do you want to leave the page?")
+/*var testConfirmBox = confirm("do you want to leave the page?")
 if (testConfirmBox == true){
     alert("thanks for visiting");
 } else {
     alert("ok");
-}
+}*/
 
 //object contructor
 function person(name, age, color){
@@ -30,5 +30,22 @@ obj1.changeName("pippo")
 function myAlert(){
     alert("Hi");
 }
-//call myAlert every 5 sec
-setInterval(myAlert,5000);
+//call myAlert every 10 sec
+setInterval(myAlert,10000);
+
+//---------DOM----------
+document.body.innerHTML = "some text"
+//find elemnents by id
+document.getElementById(id);
+//find elements by class name
+document.getElementsByClassName(name); // retur array
+//find elements by tag name
+document.getElementsByTagName(name);
+
+var elem = document.getElementById("prova");
+elem.innerHTML = "ciao"; // change content of the fetched value
+
+// targeting img for example, you can also change attributes
+var elem2 = document.getElementById("img1");
+elem2.src = "ciao77.jpg"; // change content of the fetched value
+
